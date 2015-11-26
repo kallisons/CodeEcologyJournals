@@ -1,4 +1,4 @@
-Copyright (c) 2015, K. A. S. Mislan
+Copyright (c) 2015, K. A. S. Mislan, J. M. Heer, E. P. White
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

@@ -1,7 +1,9 @@
 ### Code in Ecology Journals
 
+An analysis of the author
 
 
+June 1, 2015
 
 **Please cite the following paper if you use this data/code:**
 

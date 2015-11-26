@@ -9,6 +9,7 @@ jdata<-read.table("../Data/SoftwareInEcologyAnalysis3.csv", header=TRUE, sep=","
 #---------------------------------------------------------------------
 # Creation of code mentioned at least once in ‘Author Instructions’? 
 #---------------------------------------------------------------------
+codement<-as.matrix(table(jdata$CreationSoftware))
 sumnot0<-sum(codement[2:nrow(codement),])
 codement3<-matrix(NA, 2, 1)
 codement3[1,1]<-codement[1,1]
@@ -49,6 +50,19 @@ All<-cbind(datarelpercent, coderelpercent, softsectpercent, percents3)
 # Create and Save Graph
 #------------------------
 OutFilename<-paste("../Graphs/JournalResults.ps")
-postscript(OutFilename, family="Helvetica", width=4.5, height=5)
+postscript(OutFilename, family="Helvetica", width=7, height=7)
+par(mar=c(6,4,3,4))
 barplot(All, horiz=TRUE, space=1, col=c("#1f78b4","#b2df8a"), lwd=1.5)
+text(5, 2.2, pos=4, "Data release required by journal for article publication?")
+text(5, 4.2, pos=4, "Code release required by journal for article publication?")
+text(5, 6.2, pos=4, "Journal has a section for documentation of software releases?")
+mtext(side=3, line=-0.5, "Creation of code mentioned at least once in Author Instructions?")
+text(3, 1.5, "No", col="white")
+text(96.5, 1.5, "Yes", col="black")
+text(3, 3.5, "No", col="white")
+text(96.5, 3.5, "Yes", col="black")
+text(3, 5.5, "No", col="white")
+text(96.5, 5.5, "Yes", col="black")
+text(3, 7.5, "No", col="white")
+text(96.5, 7.5, "Yes", col="black")
 dev.off()
