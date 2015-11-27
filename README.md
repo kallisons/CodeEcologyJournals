@@ -1,24 +1,43 @@
 ### Code in Ecology Journals
 
-Data were obtained from the author instructions of ecology journals.
+A study of   
 
 
 **Please cite the following paper if you use this data/code:**
 
-Mislan, K. A. S., J. M. Heer, and E.P. White. (2016)  Elevating the Status of Code in Ecology. Trends in Ecology and Evolution. [http://dx.doi.org/10.1016/j.tree.2015.11.006 ](http://dx.doi.org/10.1016/j.tree.2015.11.006)
+Mislan, K. A. S., J. M. Heer, and E.P. White. (2016) Elevating the Status of Code in Ecology. Trends in Ecology and Evolution. [http://dx.doi.org/10.1016/j.tree.2015.11.006 ](http://dx.doi.org/10.1016/j.tree.2015.11.006)
 
 ----------------------
-####Software dependencies
+#### Software dependencies
+The software used to create Figure 1 is open source:
+
+R version 3.2.2: [http://www.r-project.org/](http://www.r-project.org/)
+
 ----------------------
+#### Data
 
-All the required software is open source:
+Journals were identified through a search of the Journal Citation Reports (JCR) using the following search terms: "Ecology" for category, "2013" for year, "SCIE" (Science Citation Index) and "SSCI" (Social Sciences Citation Index) editions checked, and "Web of Science" for the category schema.  Between March 1, 2015 and June 1, 2015, the author instructions for each journal were searched to determine if there was any mention of code or software in the context of scientific research.  We also determined whether journals had a section for documentation of scientific software releases, and if journals had a policy requiring the release of code and/or data for article publication.
 
+**Original spreadsheet**
 
+Archive/SoftwareInEcologyAnalysis2.csv
 
-**Data**   
+**Curated spreadsheet for Figure 1**
 
+Data/SoftwareInEcologyAnalysis3.csv
 
-March 1, 2015 to June 1, 2015
+----------------------
+#### Graph
+The data were plotted in a graph using R. The following commands in a unix shell will create the graph and save it in the Graphs folder.
 
-**Graph**
-The data were plotted in a graph using R.
+Change directory:  
+
+    cd RCode
+
+Command to plot graph:
+
+    RScript AnalyzeJournalInfo.R
+
+----------------------
+#### Acknowledgements
+K.A.S. was supported by the Washington Research Foundation Fund for Innovation in Data-Intensive Discovery and the Moore/Sloan Data Science Environments Project at the University of Washington.  This work was partially supported by the Gordon and Betty Moore Foundation's Data-Driven Discovery Initiative through grant GBMF4553 to J.M.H. and grant GBMF4563 to E.P.W.
