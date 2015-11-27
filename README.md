@@ -1,7 +1,6 @@
 ### Code in Ecology Journals
 
-A study of   
-
+This analysis assesses the way ecology journals handle code and software written for scientific research.  The results of the analysis were used to create Figure 1 in Mislan et al. (2016).   
 
 **Please cite the following paper if you use this data/code:**
 
