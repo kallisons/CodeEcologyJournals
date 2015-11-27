@@ -28,7 +28,7 @@ Data/SoftwareInEcologyAnalysis3.csv
 
 ----------------------
 #### Graph
-The data were plotted in a graph using R. The following commands in a unix shell will create the graph and save it in the Graphs folder.
+Figure 1 was made using R. To recreate the graph in Figure 1, paste the following commands into a unix shell.  The commands assume that the current directory is the CodeEcologyJournals folder.  The graph will be saved in the Graphs folder.
 
 Change directory:  
 
