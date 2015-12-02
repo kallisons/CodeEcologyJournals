@@ -46,6 +46,12 @@ datarelpercent<-(datarel/sum(datarel))*100
 #---------------------------------------------------------------------
 All<-cbind(datarelpercent, coderelpercent, softsectpercent, percents3)
 
+#--------------------------
+# Create Folder for Output
+#--------------------------
+
+dir.create("../Graphs")
+
 #------------------------
 # Create and Save Graph
 #------------------------
