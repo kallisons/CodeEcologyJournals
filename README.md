@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.34689.svg)](http://dx.doi.org/10.5281/zenodo.34689)
+
 ### Code in Ecology Journals
 
 This analysis assesses the way ecology journals handle code and software written for scientific research.  The results of the analysis were used to create Figure 1 in Mislan et al. (2016).   
